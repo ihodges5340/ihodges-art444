@@ -1,4 +1,9 @@
 /* CSS GOES HERE */
+@font-face {
+    font-family: 'paragraph';
+    src: url(../Fonts/DarkerGrotesque-VariableFont_wght.ttf);
+}
+
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -34,6 +39,10 @@ section:nth-child(even) {
     max-width: 960px;
     text-align: left;
     margin: 0 auto;
+}
+
+p{
+    font-family: 'paragraph';
 }
 h1 {
     font-size: 3em;
