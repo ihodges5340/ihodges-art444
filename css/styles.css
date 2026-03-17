@@ -10,6 +10,8 @@ html {
     scroll-behavior: smooth;
 }
 
+.hero-wrapper {position: relative;}
+
 .subheader {
     margin-top: 0;
     margin-bottom: 40px;
@@ -26,7 +28,7 @@ html {
 .heroimage {
     position: relative;
     width: 100%;
-    height: 618px;
+    height: 550px;
     padding-top: 0px;
 }
 
@@ -58,6 +60,8 @@ html {
     width: 100%;
     height: 57px;
     text-align: center;
+    margin-bottom: 100px;
+    line-height: 90px;
 }
 
 
@@ -74,9 +78,24 @@ html {
     margin: 0 auto;
 }
 
-.about-paragraph{
+.spot-graphic-wrapper {
+    position: relative;
+    height: 0;
+}
+
+.spot-graphic {
+    position: absolute;
+    z-index: 5;
+    width: 200px;
+    top: -100px;
+    right: 85px;
+
+}
+
+.about-paragraph {
     width: 480px;
 }
+
 .about-image {
     width: 425px;
     height: 475px;
@@ -94,11 +113,12 @@ html {
     color: #fff;
     color: #333;
     font-family: "Darker Grotesque";
-    font-size: 100px;
+    font-size: 150px;
     font-style: normal;
     font-weight: 900;
     line-height: 40px;
     width: 90%;
+    line-height: 80px;
 }
 
 .about-subheader {
@@ -250,7 +270,7 @@ div.text-wrapper {
 section {
     padding: 0px 85px;
     margin-top: 0%;
-    margin-bottom: 0;
+    margin-bottom: 30px;
 }
 
 
@@ -258,16 +278,34 @@ body {
     background: linear-gradient(180deg, #FFFAF5 6.73%, #A4CCC4 53.37%, #FFFAF5 100%);
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
-.light-mode-button{
-display: flex;
-width: 45px;
-height: 78px;
-transform: rotate(-90deg);
-padding: 15px 12px;
-justify-content: space-between;
-align-items: flex-start;
+.light-mode-control-group{
+}
+
+.light-mode-background {
+    display: flex;
+    width: 10px;
+    height: 45px;
+    transform: rotate(-90deg);
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 32px;
+    border: 3px solid #333;
+    background: #333;
+    top: 40px;
+    left: 85px;
+}
+
+.light-mode-button {
+    width: 20px;
+    height: 20px;
+    background: #333;
+    border: 2px solid #FFFAF5;
+    border-radius: 50%;
+    flex-shrink: 0;
 }
 
 .container {
@@ -390,6 +428,10 @@ footer {
     font-style: normal;
     font-weight: 700;
     line-height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 40px 85px;
+    justify-content: space-between;
 }
 
 
