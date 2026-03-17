@@ -15,11 +15,11 @@ html {
     margin-bottom: 40px;
     color: #FFFAF5;
     font-family: "Darker Grotesque";
-    font-size: 45px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 900;
     line-height: 40px;
-
+    letter-spacing: .01em;
 }
 
 
@@ -67,18 +67,22 @@ html {
     align-items: flex-start;
     padding: 60px 85px;
     position: relative;
+    justify-content: center;
     width: 100%;
     box-sizing: border-box;
-    max-width: 100%;   
-    margin: 0 auto;}
+    max-width: 100%;
+    margin: 0 auto;
+}
 
-
+.about-paragraph{
+    width: 480px;
+}
 .about-image {
     width: 425px;
     height: 475px;
     object-fit: cover;
     flex-shrink: 0;
-    margin-right: 150px;
+    margin-right: 100px;
 }
 
 
@@ -256,6 +260,15 @@ body {
     background-size: cover;
 }
 
+.light-mode-button{
+display: flex;
+width: 45px;
+height: 78px;
+transform: rotate(-90deg);
+padding: 15px 12px;
+justify-content: space-between;
+align-items: flex-start;
+}
 
 .container {
     width: 100%;
@@ -382,14 +395,27 @@ footer {
 
 .thank-you {
     display: flex;
-    width: 700px;
+    width: 100%;
     height: 155px;
     flex-direction: column;
-    align-items: flex-start;
-    gap: px;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
+    margin-bottom: 45px;
+    margin-top: 45px;
+
+}
+
+.thank-subheader {
+    color: #333;
+    text-align: center;
+    font-family: "Darker Grotesque";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 40px;
+    margin-bottom: 5px;
 }
 
 
