@@ -10,11 +10,9 @@ html {
     scroll-behavior: smooth;
 }
 
-.hero-wrapper {position: relative;}
-
 .subheader {
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     color: #FFFAF5;
     font-family: "Darker Grotesque";
     font-size: 40px;
@@ -24,6 +22,22 @@ html {
     letter-spacing: .01em;
 }
 
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    flex-shrink: 0;
+    margin-right: 30px;
+}
+
+.nav-logo {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+    width: auto !important;
+    margin-right: 20px;
+}
 
 .heroimage {
     position: relative;
@@ -47,6 +61,7 @@ html {
     font-style: normal;
     font-weight: 500;
     line-height: 28px;
+    padding-top: 0%;
 }
 
 
@@ -60,7 +75,7 @@ html {
     width: 100%;
     height: 57px;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     line-height: 90px;
 }
 
@@ -159,8 +174,9 @@ html {
 .right-container {
     align-self: stretch;
     flex-direction: row;
+    margin: 0 auto;
     display: flex;
-    width: 100%;
+    width: 95%;
     box-sizing: border-box;
     overflow: hidden;
     padding: 60px 85px;
@@ -176,7 +192,8 @@ html {
 .left-container {
     align-self: stretch;
     display: flex;
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
     box-sizing: border-box;
     overflow: hidden;
     padding: 60px 85px;
@@ -281,10 +298,9 @@ body {
 
 }
 
-.light-mode-control-group{
-}
-
 .light-mode-background {
+    top: 40px;
+    z-index: 10;
     display: flex;
     width: 10px;
     height: 45px;
@@ -295,8 +311,7 @@ body {
     border-radius: 32px;
     border: 3px solid #333;
     background: #333;
-    top: 40px;
-    left: 85px;
+    align-self: center;
 }
 
 .light-mode-button {
@@ -307,6 +322,7 @@ body {
     border-radius: 50%;
     flex-shrink: 0;
 }
+
 
 .container {
     width: 100%;
@@ -353,7 +369,7 @@ section .gallery {
 footer {
     display: flex;
     width: 100%;
-    height: 237px;
+    height: 240px;
     justify-content: center;
     align-items: flex-start;
     gap: 3px;
@@ -362,31 +378,36 @@ footer {
     margin-right: 0 !important;
 }
 
+.footer-cta a {
+    text-decoration: none;
+    color: #FFFAF5;
+    border-radius: 100px;
+    outline: 2px rgb(230, 226, 226) solid;
+    outline-offset: 4px;
+}
 
 .footer-copyright-cta {
     display: flex;
     flex-direction: row;
-    padding-right: 20px;
+    padding: 0px 85px 0px 0px;
     text-decoration: none;
     color: #FFFAF5;
-}
-
-
-.footer-cta {
-    color: #FFFAF5;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 
 .text-footer-container {
-    display: flex;
     width: 656px;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: center;
     gap: 13px;
     flex-shrink: 0;
     color: #FFFAF5;
-    padding: 30px 30px;
-
+    margin-top: 0%;
+    flex: 1;
 }
 
 
@@ -394,9 +415,43 @@ footer {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
+.bottom-nav li a {
+    color: #FFFAF5;
+    text-decoration: none;
+    padding: 8px 10px;
+    white-space: nowrap;
+    display: block;
+
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Darker Grotesque";
+    font-size: 20px;
+    color: #FFFAF5;
+    justify-content: flex-end;
+    padding-bottom: 0;
+    padding: 40px 65px 0px 0px;
+}
+
+.bottom-nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    justify-content: flex-end;
+}
+
+.footer p {
+    margin: 0;   
+    padding: 0;
+}
 
 .nav-list li {
     display: inline-block;
@@ -404,34 +459,48 @@ footer {
 
 
 .nav-list li a {
-    padding-right: 70px;
+    padding: 14px 10px;
     display: block;
     padding: 14px 16px;
     text-decoration: none;
-    color: #333;
 }
 
 
 .footer-copyright {
-    padding-right: 20px
+    padding-top: 0%;
 }
 
 .top-nav {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    align-items: center;
     z-index: 10;
     color: #333;
     font-family: "Darker Grotesque";
-    font-size: 20px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 40px;
     display: flex;
-    justify-content: flex-start;
-    padding: 40px 85px;
     justify-content: space-between;
+    padding: 40px 85px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.top-nav a,
+.bottom-nav a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: "Darker Grotesque";
+
+}
+
+.top-nav a {
+    color: #333;
+}
+
+.bottom-nav a {
+    color: #FFFAF5;
 }
 
 
@@ -509,4 +578,9 @@ footer {
     background: #97AA6A;
     box-shadow: 0 4px 6.8px 0 rgba(0, 0, 0, 0.54);
 
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
 }
