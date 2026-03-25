@@ -93,22 +93,87 @@ html {
     margin: 0 auto;
 }
 
-.spot-graphic-wrapper {
+.about-background {
+    margin: 50px auto;
+    max-width: 1200px;
+    background: #FFFAF5;
+    backdrop-filter: blur(2px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2),
+        inset 0 4px 20px rgba(255, 255, 255, 0.3);
+    width: calc(100% - 200px);
+}
+
+.about-background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1px);
+    box-shadow: inset -10px -8px 0px -11px rgba(255, 255, 255, 1),
+        inset 0px -9px 0px -8px rgba(255, 255, 255, 1);
+    opacity: 0.6;
+    z-index: -1;
+    filter: blur(1px) drop-shadow(10px 4px 6px black) brightness(115%);
+}
+
+.turtle-spot-graphic-wrapper {
     position: relative;
     height: 0;
 }
 
-.spot-graphic {
+.turtle-spot-graphic {
     position: absolute;
     z-index: 5;
     width: 200px;
-    top: -100px;
-    right: 85px;
+    top: -180px;
+    right: 150px;
+
+}
+
+.pencil-spot-graphic-wrapper {
+    position: relative;
+    height: 0;
+}
+
+.pencil-spot-graphic {
+    position: absolute;
+    z-index: 5;
+    width: 200px;
+    bottom: 130px;
+    left: 200px;
+transform: rotate(45deg);
 
 }
 
 .about-paragraph {
     width: 480px;
+}
+
+.about-image-wrapper{
+       position: relative;
+    width: 425px;
+    height: 475px;
+    flex-shrink: 0;
+    margin-right: 100px;
+}
+
+.about-image-wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;        /* ← how tall the fade is, adjust to taste */
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 0%,    /* fully transparent at top */
+        #f3f2f0 100% /* white fade at bottom */
+    );
+    pointer-events: none; /* ← makes sure the overlay doesn't block clicks */
 }
 
 .about-image {
@@ -117,6 +182,7 @@ html {
     object-fit: cover;
     flex-shrink: 0;
     margin-right: 100px;
+object-position: center 30%;
 }
 
 
@@ -236,6 +302,7 @@ html {
 
 .button-wrapper {
     align-self: flex-start;
+
 }
 
 
@@ -255,12 +322,12 @@ body {
     font-family: "Darker Grotesque";
     font-size: 20px;
     text-decoration: none;
-    width: 100%;
     height: 100%;
-    padding-left: 40%;
-    padding-right: 40%;
-    padding-top: 15%;
-    padding-bottom: 15%;
+    width: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     box-shadow: 0px 4px 6.800000190734863px rgba(0, 0, 0, 0.54);
     overflow: hidden;
     border-radius: 100px;
@@ -292,7 +359,7 @@ section {
 
 
 body {
-    background: linear-gradient(180deg, #FFFAF5 6.73%, #A4CCC4 53.37%, #FFFAF5 100%);
+    background: linear-gradient(180deg, #FFFAF5 6.73%, #a4ccc4 53.37%, #FFFAF5 100%);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -597,13 +664,13 @@ footer {
 
 /*ABOUT SECTION*/
 
-.faq-box{
-        align-self: stretch;
+.faq-box {
+    align-self: stretch;
     width: 95%;
-    margin: 0 auto;
+    margin: 0 auto 80px auto;
     box-sizing: border-box;
     overflow: hidden;
-    padding: 60px 85px;
+    padding: 30px 85px;
     justify-content: space-between;
     flex-direction: row;
     align-items: flex-start;
@@ -612,3 +679,132 @@ footer {
     box-shadow: 0 20px 36.8px -15px rgba(0, 0, 0, 0.25);
 }
 
+.answer {
+    display: none;
+    color: #FFFAF5;
+    font-family: "Darker Grotesque";
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.faq-box.open .answer {
+    display: block;
+}
+
+.faq-box {
+    cursor: pointer;
+}
+
+.faq-box .subheader {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
+@media (max-width: 1320px) {
+/*about*/
+    .about-section {
+        flex-direction: column;
+        padding: 40px 30px;
+        align-items: center;
+    }
+
+    .about-me-container {
+        align-items: center;
+    }
+
+    .about-background {}
+
+
+    .about-image {
+        width: 425px;
+        height: 475px;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .about-paragraph {
+        width: 80%;
+        text-align: center;
+    }
+
+    .subheader{
+        text-align: center;
+font-size: 30px;
+    }
+
+    .Title {
+        font-size: 70px;
+    }
+
+    .button-wrapper {
+        text-align: center;
+        align-self: center;
+        justify-content: center;
+    }
+
+    .section-title {
+        font-size: 52px;
+        height: auto;
+        margin-bottom: 100px;
+        line-height: 55px;
+    }
+
+    section {
+        padding: 0px 30px;
+    }
+
+    .faq-box {
+        padding: 30px;
+        width: 100%;
+    }
+/* Home page */
+    .left-container,
+    .right-container {
+        flex-direction: column; 
+        padding: 40px 30px;
+        width: 100%;
+    }
+
+            .left-container-text,
+    .right-container-text {
+        text-align: center;
+        max-width: 100%;}
+
+    .pencil-spot-graphic-wrapper{
+        left: -120px;
+        top: 60px;
+    }
+.gallery{
+    flex-direction: flex-start;
+    width: 100%;
+}
+
+.galleryimage{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.time-indicator-left{
+        left: 0;
+        display: flex;
+width: fit-content;
+        margin: 0 auto;
+        margin-top: 30px;
+}
+
+.left-container{
+    align-content: center;
+}
+
+.container-paragraph{
+text-align: center;
+}
+
+    .turtle-spot-graphic-wrapper{
+        right: -100px;
+        bottom:-20px;
+    }
+}
