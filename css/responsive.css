@@ -1,8 +1,126 @@
 /* TABLET VIEW */
-@media only screen and (max-width:992px) {
+@media (max-width: 1290px) {
+/*about*/
+    .about-section {
+        flex-direction: column;
+        padding: 40px 30px;
+        align-items: center;
+    }
 
+    .about-me-container {
+        align-items: center;
+    }
+
+    .about-background {}
+
+
+    .about-image {
+        width: 425px;
+        height: 475px;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .about-paragraph {
+        width: 80%;
+        text-align: center;
+    }
+    
+    .faq-arrow{
+      display: inline-block;
+    vertical-align: middle;
+    }
+
+    .faq-box .subheader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subheader{
+        text-align: center;
+font-size: 30px;
+    }
+
+    .answer{
+        text-align: center;
+        align-items: center;
+    }
+
+    .Title {
+        font-size: 70px;
+    }
+
+    .button-wrapper {
+        text-align: center;
+        align-self: center;
+        justify-content: center;
+    }
+
+    .section-title {
+        font-size: 52px;
+        height: auto;
+        margin-bottom: 100px;
+        line-height: 55px;
+    }
+
+    section {
+        padding: 0px 85px;
+    }
+
+    .faq-box {
+        padding: 30px;
+        width: 100%;
+    }
+/* Home page */
+    .left-container,
+    .right-container {
+        flex-direction: column; 
+        padding: 40px 30px;
+        width: 100%;
+    }
+
+            .left-container-text,
+    .right-container-text {
+        text-align: center;
+        max-width: 100%;}
+
+    .pencil-spot-graphic-wrapper{
+        left: -120px;
+        top: 60px;
+    }
+.gallery{
+    flex-direction: flex-start;
+    width: 100%;
 }
 
+.galleryimage{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.time-indicator-left{
+        left: 0;
+        display: flex;
+width: fit-content;
+        margin: 0 auto;
+        margin-top: 30px;
+}
+
+.left-container{
+    align-content: center;
+}
+
+.container-paragraph{
+text-align: center;
+}
+
+    .turtle-spot-graphic-wrapper{
+        right: -100px;
+        bottom:-20px;
+    }
+}
 
 /* MOBILE VIEW */
 @media only screen and (max-width: 478px) {

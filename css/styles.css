@@ -76,6 +76,7 @@ html {
     height: 57px;
     text-align: center;
     margin-bottom: 150px;
+    margin-top:150px;
     line-height: 90px;
 }
 
@@ -167,14 +168,13 @@ transform: rotate(45deg);
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 50%;        /* ← how tall the fade is, adjust to taste */
+    height: 50%;       
     background: linear-gradient(
         to bottom,
-        rgba(255, 255, 255, 0) 0%,    /* fully transparent at top */
-        #f3f2f0 100% /* white fade at bottom */
+        rgba(255, 255, 255, 0) 0%,   
+        #f3f2f0 100%
     );
-    pointer-events: none; /* ← makes sure the overlay doesn't block clicks */
-}
+    pointer-events: none; 
 
 .about-image {
     width: 425px;
@@ -667,7 +667,7 @@ footer {
 .faq-box {
     align-self: stretch;
     width: 95%;
-    margin: 0 auto 80px auto;
+    margin: 0 auto 95px auto;
     box-sizing: border-box;
     overflow: hidden;
     padding: 30px 85px;
@@ -684,7 +684,32 @@ footer {
     color: #FFFAF5;
     font-family: "Darker Grotesque";
     font-size: 18px;
-    margin-top: 10px;
+    margin-top: 30px;
+    max-width: 850px;
+}
+
+
+.faq-arrow {
+    width: 12px;
+
+    height: 12px;
+transform: rotate(45deg);
+    border-right: 5px solid #FFFAF5;
+    border-bottom: 5px solid #FFFAF5;
+    transition: transform 0s ease;
+    margin-left: 10px;  
+}
+
+.faq-box .subheader {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.faq-box.open .faq-arrow {
+    transform: rotate(-135deg);
 }
 
 .faq-box.open .answer {
@@ -699,112 +724,4 @@ footer {
     margin-top: 0;
     margin-bottom: 0;
 }
-
-
-
-@media (max-width: 1320px) {
-/*about*/
-    .about-section {
-        flex-direction: column;
-        padding: 40px 30px;
-        align-items: center;
-    }
-
-    .about-me-container {
-        align-items: center;
-    }
-
-    .about-background {}
-
-
-    .about-image {
-        width: 425px;
-        height: 475px;
-        margin-right: 0;
-        margin-bottom: 30px;
-    }
-
-    .about-paragraph {
-        width: 80%;
-        text-align: center;
-    }
-
-    .subheader{
-        text-align: center;
-font-size: 30px;
-    }
-
-    .Title {
-        font-size: 70px;
-    }
-
-    .button-wrapper {
-        text-align: center;
-        align-self: center;
-        justify-content: center;
-    }
-
-    .section-title {
-        font-size: 52px;
-        height: auto;
-        margin-bottom: 100px;
-        line-height: 55px;
-    }
-
-    section {
-        padding: 0px 30px;
-    }
-
-    .faq-box {
-        padding: 30px;
-        width: 100%;
-    }
-/* Home page */
-    .left-container,
-    .right-container {
-        flex-direction: column; 
-        padding: 40px 30px;
-        width: 100%;
-    }
-
-            .left-container-text,
-    .right-container-text {
-        text-align: center;
-        max-width: 100%;}
-
-    .pencil-spot-graphic-wrapper{
-        left: -120px;
-        top: 60px;
-    }
-.gallery{
-    flex-direction: flex-start;
-    width: 100%;
-}
-
-.galleryimage{
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-.time-indicator-left{
-        left: 0;
-        display: flex;
-width: fit-content;
-        margin: 0 auto;
-        margin-top: 30px;
-}
-
-.left-container{
-    align-content: center;
-}
-
-.container-paragraph{
-text-align: center;
-}
-
-    .turtle-spot-graphic-wrapper{
-        right: -100px;
-        bottom:-20px;
-    }
 }
