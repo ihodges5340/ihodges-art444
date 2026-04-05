@@ -557,10 +557,10 @@ section .gallery {
 }
 
 .turtle-spot-graphic {
-    position: absolute;
-    width: 120px;
+position: absolute;
+    width: 190px;
     top: -100px;
-    right: 10px;
+    right: 100px;
     left: auto;
     transition: transform 1s ease;
 }
