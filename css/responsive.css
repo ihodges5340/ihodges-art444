@@ -1,128 +1,738 @@
 /* TABLET VIEW */
-@media (max-width: 1290px) {
-/*about*/
+@media (max-width: 1024px) {
+
+    /* About */
     .about-section {
         flex-direction: column;
-        padding: 40px 30px;
+        padding: 40px 50px;
         align-items: center;
     }
 
-    .about-me-container {
-        align-items: center;
+    .gallery {
+        display: flex;
+        flex-wrap: wrap; 
+        flex-direction: row; 
     }
 
-    .about-background {}
-
-
-    .about-image {
-        width: 425px;
-        height: 475px;
-        margin-right: 0;
-        margin-bottom: 30px;
+ .hamburger {
+        display: none;
+    }
+    .nav-links {
+        display: flex;  /* always visible at tablet */
     }
 
-    .about-paragraph {
-        width: 80%;
-        text-align: center;
+
+    .galleryimage {
+        width: calc(50% - 5px);
+        /* two columns */
     }
-    
-    .faq-arrow{
-      display: inline-block;
+
+.about-me-container {
+    align-items: center;
+    padding: 0 1.7rem;
+}
+
+.about-image-wrapper {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 30px;
+}
+
+.about-image {
+    width: 60%;
+    max-width: 400px;
+    min-width: 150px;
+    align-self: center;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+}
+
+.about-subheader {
+    text-align: center;
+}
+
+.about-paragraph {
+    width: 100%;
+    text-align: center;
+}
+
+/* FAQ */
+.faq-box {
+    padding: 30px;
+    width: 100%;
+}
+
+.faq-box .subheader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-arrow {
+    display: inline-block;
     vertical-align: middle;
-    }
+}
 
-    .faq-box .subheader {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.answer {
+    text-align: center;
+    align-items: center;
+}
 
-    .subheader{
-        text-align: center;
-font-size: 30px;
-    }
+/* Typography */
+.Title {
+    font-size: 70px;
+}
 
-    .answer{
-        text-align: center;
-        align-items: center;
-    }
+.subheader {
+    text-align: center;
+    font-size: 30px;
+}
 
-    .Title {
-        font-size: 70px;
-    }
+.section-title {
+    font-size: 52px;
+    height: auto;
+    margin-bottom: 100px;
+    line-height: 55px;
+}
 
-    .button-wrapper {
-        text-align: center;
-        align-self: center;
-        justify-content: center;
-    }
+/* Layout */
+section {
+    padding: 0px 85px;
+}
 
-    .section-title {
-        font-size: 52px;
-        height: auto;
-        margin-bottom: 100px;
-        line-height: 55px;
-    }
+.button-wrapper {
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+}
 
-    section {
-        padding: 0px 85px;
-    }
+.container-paragraph {
+    text-align: center;
+    margin-bottom: -20px;
+}
 
-    .faq-box {
-        padding: 30px;
-        width: 100%;
-    }
-/* Home page */
-    .left-container,
-    .right-container {
-        flex-direction: column; 
-        padding: 40px 30px;
-        width: 100%;
-    }
+.copyright-break br {
+    display: none;
+}
 
-            .left-container-text,
-    .right-container-text {
-        text-align: center;
-        max-width: 100%;}
-
-    .pencil-spot-graphic-wrapper{
-        left: -120px;
-        top: 60px;
-    }
-.gallery{
-    flex-direction: flex-start;
+/* Home page containers */
+.left-container,
+.right-container {
+    flex-direction: column;
     width: 100%;
+    padding-top: 60px;
 }
 
-.galleryimage{
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-.time-indicator-left{
-        left: 0;
-        display: flex;
-width: fit-content;
-        margin: 0 auto;
-        margin-top: 30px;
-}
-
-.left-container{
+.left-container {
     align-content: center;
 }
 
-.container-paragraph{
-text-align: center;
+.left-container-text,
+.right-container-text {
+    text-align: center;
+    max-width: 100%;
 }
 
-    .turtle-spot-graphic-wrapper{
-        right: -100px;
-        bottom:-20px;
+
+
+
+/* Spot graphics */
+  .turtle-spot-graphic-wrapper {
+        position: relative;
+        height: 0;
+        width: 100%;
     }
+
+    .turtle-spot-graphic {
+        position: absolute;
+        width: 190px;
+        top: -150px;       /* adjust to taste */
+        right: 50px;      /* adjust to taste */
+        left: auto;
+    }
+
+.pencil-spot-graphic-wrapper {
+    left: -120px;
+    top: 40px;
 }
+
+/* Time indicators */
+.time-indicator-left {
+    left: 0;
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/* Section ordering */
+.spring-24 .content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.spring-24 .left-container-text {
+    order: 1;
+}
+
+.spring-24 .gallery {
+    order: 2;
+}
+
+.spring-25 .right-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.spring-25 .right-container-text {
+    order: 1;
+}
+
+.spring-25 .gallery {
+    order: 2;
+}
+
+.spring-26 .right-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.spring-26 .right-container-text {
+    order: 1;
+}
+
+.spring-26 .gallery {
+    order: 2;
+}
+
+.title {
+    line-height: 100px;
+}
+
+.top-nav {
+    margin-left: 90px;
+}
+
+
+.newspaper-spot-graphic {
+    right: 260px;
+    top: 330px;
+}
+
+.postcard-spot-graphic {
+    top: 120px;
+right: 350px;
+    rotate: -20deg
+}
+
+.soda-spot-graphic {
+    top: 100px;
+    right: 100px;
+    z-index: 5;
+    rotate: 60deg;
+}
+
+}
+
+
+@media (max-width: 860px) {
+
+    .nav-links li a:hover {
+    background-color: rgba(0, 0, 0, 0.08);  /* slight grey */
+}
+
+    .top-nav {
+        position: fixed !important;
+        margin-left: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        padding: 15px 20px !important;
+        box-sizing: border-box !important;
+        justify-content: flex-start !important;  /* align everything to left */
+        gap: 20px;                               /* even spacing between elements */
+    background: #97AA6A;
+        z-index: 100;
+    }
+
+        .newspaper-spot-graphic {
+        right: 40px;}
+
+    .nav-logo {
+        margin-right: 0;    /* remove any extra right margin */
+    }
+
+    .hamburger {
+        display: flex !important;
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin-left: 0;     /* remove negative margin */
+        margin-right: 0;
+        padding: 10px;
+    }
+
+    .hamburger i {
+        font-size: 35px;
+        color: #333;
+    }
+
+    .nav-links {
+        display: none !important;
+    }
+
+    .nav-links.open {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center !important;
+        position: fixed;
+        top: 10vh;
+        left: 10vw;
+        width: 80vw;
+        height: 80vh;
+        background: rgb(255, 250, 245, 0.8);
+        border-radius: 12px;
+        z-index: 999;
+    }
+
+    .nav-links.open li {
+        text-align: center;
+        padding: 15px 0;
+        width: 100%;
+    }
+
+    .nav-links.open li a {
+        font-size: 30px;
+        font-weight: 900;
+        color: #333;
+    }
+
+    .close-btn {
+        display: block !important;  /* makes X visible */
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: none;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        color: #333;
+    }
+
+    .pencil-spot-graphic{
+        rotate: 45deg;
+    }
+
+    .turtle-spot-graphic{
+        top: -120px;
+    }
+
+
+}
+
+
+
+
 
 /* MOBILE VIEW */
-@media only screen and (max-width: 478px) {
-  
+@media (max-width: 478px) {
+
+    .topnav a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        align-items: center;
+        z-index: 10;
+        color: #333;
+        font-family: "Darker Grotesque";
+        font-style: normal;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0px;
+        margin-left: 135px;
+        box-sizing: border-box;
+        align-items: center;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .galleryimage {
+        width: 100%;
+        /* single column */
+    }
+
+.nav-popup .nav-list li {
+    display: block;
+    /* overrides inline-block from nav-list li */
+    padding: 20px 0;
+}
+
+.nav-popup .nav-list li a {
+    color: #FFFAF5;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.hamburger {
+        display: flex!important;
+        background: none;      /* removes white background */
+        border: none;          /* removes border */
+        outline: none;         /* removes focus outline */
+        padding: 18px;
+        margin-left: -20px;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+
+    .hamburger i {
+        font-size: 35px;
+        color: #333;
+        margin-left: 25px;
+        margin-right: -10px;
+    }
+
+    .nav-links {
+        display: none;  /* hidden until opened */
+    }
+    .nav-links.open {
+        display: flex;  /* shows when toggled */
+    }
+    .close-btn {
+        display: block;  /* makes X visible */
+    }
+
+.nav-links li a:hover {
+    background-color: rgba(0, 0, 0, 0.08);  /* slight grey */
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #FFFAF5;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+.nav-links.open {
+    display: flex;
+    z-index: 1000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 10vh;
+    /* distance from top */
+    left: 10vw;
+    /* distance from sides */
+    width: 80vw;
+    /* narrower than full screen */
+    height: 80vh;
+    /* shorter than full screen */
+    background: rgb(255, 250, 245, .8);
+    border-radius: 12px;
+    /* optional rounded corners */
+    z-index: 999;
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+    /* match your text color */
+}
+
+
+
+.nav-links li {
+    list-style: none;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+/* About */
+.about-background {
+    margin: 40px auto;
+    width: calc(100% - 40px);
+}
+
+.about-section {
+    flex-direction: column;
+    padding: 30px;
+    width: 100%;
+}
+
+.about-me-container {
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.about-image-wrapper {
+    margin-bottom: -40px;
+}
+
+.about-subheader {
+    width: 95%;
+    font-size: 60px;
+    line-height: 50px;
+}
+
+.about-paragraph {
+    text-align: center;
+}
+
+/* Spot graphics */
+.about-newspaper-spot-graphic {
+    position: absolute;
+    z-index: 5;
+    width: 150px;
+    bottom: 60px;
+    left: 250px;
+    rotate: -10deg;
+    transition: transform 1s ease;
+}
+
+.about-soda-spot-graphic {
+    position: absolute;
+    z-index: 5;
+    width: 150px;
+    bottom: 60px;
+    right: 250px;
+    rotate: 10deg;
+    transition: transform 1s ease;
+}
+
+/* FAQ */
+.answer {
+    font-size: 18px;
+    max-width: 850px;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.faq-arrow {
+    margin-left: 0px;
+}
+
+/* Typography */
+.title {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 110px;
+    text-align: center;
+    width: 80%;
+}
+
+.time-indicator-left {
+    left: 0;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/* Layout */
+section {
+    padding: 0px 40px;
+}
+
+.heroimage {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    padding-top: 0px;
+}
+
+ .top-nav {
+        position: fixed !important;
+        margin-left: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        padding: 15px 20px !important;
+        box-sizing: border-box !important;
+        justify-content: center !important;
+        z-index: 100;
+    }
+
+/* Footer */
+footer {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer>a {
+    order: 1;
+}
+
+footer>.text-footer-container {
+    order: 2;
+}
+
+.text-footer-container {
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px !important;
+}
+
+.footer-copyright-cta {
+    align-items: center;
+}
+
+.footer-copyright,
+.footer-cta {
+    text-align: center;
+    padding-right: 0;
+}
+
+.footer-logo {
+    align-self: center;
+    margin-right: 0;
+}
+
+.bottom-nav ul {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Regular*/
+
+.left-container {
+    padding: 30px;
+    width: 100%;
+}
+
+.spring-25 .right-container {
+    padding: 30px;
+    width: 100%;
+}
+
+
+
+.right-container {
+    padding: 30px;
+    width: 100%;
+}
+
+.bottom-nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    width: 300px;
+    justify-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.nav-list li {
+    display: block;
+    text-align: center;
+}
+
+.bottom-nav {
+    justify-content: center;
+    width: 100%;
+}
+
+
+.container {
+    width: 95%;    
+    text-align: center;
+
+}
+
+
+.section-title {
+    height: auto;
+    width: auto;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+        text-align: center;
+    font-size: 80px;
+    line-height: 70px;
+}
+
+
+.left-container-text {
+    padding-top: 20px;
+}
+
+.right-container-text {
+    padding-top: 20px;
+}
+
+
+
+.pencil-spot-graphic {
+    width: 200px;
+    bottom: 250px;
+    left: 150px;
+    transform: rotate(80deg);
+    width: 150px;
+}
+
+.turtle-spot-graphic {
+    top: -130px;
+    width: 150px;
+}
+
+
+.title {
+    transform: translate(-50%, -70%);
+    line-height: 70px;
+    font-size: 80px;
+    margin-top: 80px;
+}
+
+
+.newspaper-spot-graphic {
+    width: 150px;
+    top: 1250px;
+    right: 30px;
+}
+
+.postcard-spot-graphic {
+    width: 150px;
+    top: 300px;
+    right: 290px;
+    rotate: -20deg;
+}
+
+.soda-spot-graphic {
+        right: 4%;
+        margin-top: 440px;
+        rotate: 10deg;
+}
+
+ .about-page .bottom-nav {
+        display: none;
+    }
+
 }

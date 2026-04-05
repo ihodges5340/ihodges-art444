@@ -7,222 +7,261 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Isabella Hodges' Timeline Website</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
 <body>
 
-<div class="hero-wrapper">
-  <nav>
-    <div class="nav-list top-nav">
-   <a href="index.html">      
+  <div class="hero-wrapper">
+
+    <div class="soda-spot-graphic-wrapper">
+        <img class="soda-spot-graphic" src="images/soda-graphic-02.png" alt="soda spot graphic" loading="lazy" />
+      </div>
+
+      <div class="postcard-spot-graphic-wrapper">
+        <img class="postcard-spot-graphic" src="images/postcard-graphic-04.png" alt="postcard spot graphic" loading="lazy" />
+      </div>
+
+            <div class="newspaper-spot-graphic-wrapper">
+                <img class="newspaper-spot-graphic" src="images/paper-graphic-03.png" alt="newspaper spot graphic" loading="lazy" />
+            </div>
+
+    <nav>
+<div class="nav-list top-nav nav-popup" id="navPopup">
     <img class="nav-logo" src="images/DFTI-Website-logo.png" alt="logo" />
-</a>
-    <div class="nav-links">
-        <li><a href="#spring-23">Spring 23</a></li>
-        <li><a href="#spring-24">Spring 24</a></li>
-        <li><a href="#fall-24">Fall 24</a></li>
-        <li><a href="#spring-25">Spring 25</a></li>
-        <li><a href="#fall-25">Fall 25</a></li>
-        <li><a href="#spring-26">Spring 26</a></li>
-      </div> 
-             <div class="light-mode-background">
-          <div class="light-mode-button"></div>
-        </div>
-    </div>
-  </nav>
-
-      <div class="heroimage">
-    <img src="images/Hero_illustration.png" alt="Hero_illustration" loading="lazy" />
-    <h1 class="Title">Isabella Hodges</h1>
-</div>
+<div class="nav-links">
+    <button class="close-btn" onclick="toggleMenu()">
+        <i class="fa fa-times"></i>
+    </button>
+    <li><a href="#spring-23" onclick="toggleMenu()">Spring 23</a></li>
+    <li><a href="#spring-24" onclick="toggleMenu()">Spring 24</a></li>
+    <li><a href="#fall-24" onclick="toggleMenu()">Fall 24</a></li>
+    <li><a href="#spring-25" onclick="toggleMenu()">Spring 25</a></li>
+    <li><a href="#fall-25" onclick="toggleMenu()">Fall 25</a></li>
+    <li><a href="#spring-26" onclick="toggleMenu()">Spring 26</a></li>
 </div>
 
+<button class="hamburger" onclick="toggleMenu()">
+    <i class="fa-solid fa-bars"></i>
+</button>
 
-<!-- MAIN HEADER -->
-
-
-<div class="about-background">
-  <div class="about-section">
-    <div class="about-image-wrapper">
-      <img class="about-image" src="images/Isabella-Portrait2.png" alt="about" loading="lazy" />
+    <div class="light-mode-background">
+        <div class="light-mode-button"></div>
     </div>
-  
-  <div class="about-me-container">
-    <h3 class="about-subheader">WHO DO I THINK I AM?</h3>
-    <p class="paragraph about-paragraph">Isabella Hodges is a senior graphic design student at San Diego State
-      University.
-      She is involved at many organizations on and off campus but she prides herself her school’s student-run
-      newspaper
-      “The Daily Aztec” as a Graphics Editor, managing print, designs published on the website, and a team of
-      designers.<br><br> Besides design, Isabella loves reading, hanging out at the library with friends, hiking,
-      binging of cult classic movies and watching the waves at the beach. <br><br>
-      In the future, Isabella hopes to work for NGOs, media publication companies or producing branding media and
-      content for businesses that serve a good cause for the local or global community. If you want to learn about her,
-      click the button below to read her FAQ's. Additionally, take a look at a timeline of her school work
-      below!</p>
-    <div class="button-wrapper"><a class="about-button" href="about.html">ABOUT ME</a></div>
-  </div>
-</div>
 </div>
 
-
-<div class="container">
-  <h2 class="section-title">MY DESIGN TIMELINE</h2>
-</div>
-
-
-<div class="turtle-spot-graphic-wrapper"><img class="turtle-spot-graphic" src="images/turtle-graphic-01.png"
-    alt="Turtle-spot_graphic" loading="lazy" /></div>
-
-    <div class="pencil-spot-graphic-wrapper"><img class="pencil-spot-graphic" src="images/pencil-graphic-05.png"
-    alt="pencil-graphic-05" loading="lazy" /></div>
-
-
-<!-- Spring '23' -->
-<section class="spring-23" id="spring-23">
-  <div class="time-indicator-left">SPRING ‘23</div>
-  <div class="left-container">
-
-    <div class="left-container-text">
-      <h3 class="subheader">FROM SCRATCH</h3>
-      <p class="container-paragraph">I began attending San Diego State University in 2022 but did not start attending
-        design classes until after the first semester. The only experience I had with graphic design was with a couple
-        of years of experience in highschool. I liked it so much I decided to continue working on my
-        skills.<br><br>Typography 1 and Graphic Design 1 were my first ever university level classes. It felt super
-        official to have professors push you to think outside of the box and to keep on hatching ideas. It was kind of
-        intimidating to be surrounded in such a talented and fast-paced enviornment at first. I eventually found my
-        footing by practicing text layouts and projects catered to composition and branding.
+    <div class="heroimage" style="background-color: #97AA6A;">
+      <h1 class="title">Isabella Hodges</h1>
+      
     </div>
+    </nav>
 
-
-    <div class="gallery">
-      <img class="galleryimage" src="images/skolos_wedell_bookletcopy.png" alt="Skolos and Wedell" loading="lazy" />
-      <img class="galleryimage" src="images/eji-mockup.png" alt="EJI Mock-up" loading="lazy" />
-      <img class="galleryimage" src="images/jenson-type1.png" alt="Jenson Poster Triptych" loading="lazy" />
-    </div>
-  </div>
-</section>
-
-<!-- Spring '24' -->
-<section class="spring-24" id="spring-24">
-  <div class="time-indicator-left">SPRING ‘24</div>
-  <div class="left-container">
-
-    <div class="gallery">
-      <img class="galleryimage" src="images/flag-football.jpg" alt="Youth Women Flag Football" loading="lazy" />
-      <img class="galleryimage" src="images/pomona-sdsu-lacrosse-7 copy.JPG" alt="SDSU Lacrosse" loading="lazy" />
-      <img class="galleryimage" src="images/thelook-americankids.png" alt="American Kids Spread" loading="lazy" />
-    </div>
-
-    <div class="left-container-text">
-      <h3 class="subheader">MEDIA EXPERIMENTS</h3>
-      <p class="container-paragraph">At this time I was not taking design classes but I still involved myself in
-        activities that pushed for creative problem-solving. I just joined The Look fashion club on campus. I created a
-        magazine spread for American Club Kids; a fashion style that was used as a political statement by the queer
-        youth in the 80s. It was one of my first time collaborating with a team of writers, photographers and models to
-        create a piece all would like. <br><br>
-        I also began to pick up photography. The quick moments that usually flash by were hard but rewarding to capture.
-        I would eventually take a class that would teach me the foundational camera skills but I did well considering I
-        just began creating.</p>
-    </div>
 
   </div>
-</section>
 
 
 
 
-<!-- Fall '24' -->
-<section class="fall-24" id="fall-24">
-  <div class="time-indicator-left">FALL ‘24</div>
-  <div class="left-container">
+  <!-- MAIN HEADER -->
 
 
-    <div class="left-container-text">
-      <h3 class="subheader">EXPANDED HORIZONS</h3>
-      <p class="container-paragraph">I knew there was more to do with design besides doing the assigned work in class. I
-        began involving myself in clubs and internships outside the scholarly hemisphere. I spent the time outside of
-        class at publications on campus like the Daily Aztec Newspaper and The Look Fashion Magazine. I also became a
-        Design Intern for the Coronado Historical Association where I co-designed an exhibit and attendance cards for
-        walking tours.
-        <br><br> I think my involvement in these clubs and organizations really sparked my interest for news coverage
-        and community betterment; where I hope to work one day. Giving back to the community and seeing it's helpful
-        impact is what motivates me to design. Though I am scared to leave these aspects of my life behind when I
-        graduate, I know that will make a impact.
-      </p>
-    </div>
+  <div class="about-background">
+    <div class="about-section">
+      <div class="about-image-wrapper">
+        <img class="about-image" src="images/Isabella-Portrait2.png" alt="about" loading="lazy" />
+      </div>
 
-
-    <div class="gallery">
-      <img class="galleryimage" src="images/the-look-spread-dice.png" alt="The Look Spread" loading="lazy" />
-      <img class="galleryimage" src="images/prop36graphic.png" alt="Prop 36 Graphic" loading="lazy" />
-      <img class="galleryimage" src="images/cha-ticket.png" alt="cha ticket" loading="lazy" />
-    </div>
-  </div>
-</section>
-
-
-
-
-
-<!-- Spring '25' -->
-<section class="spring-25" id="spring-25">
-  <div class="time-indicator-right">SPRING ‘25</div>
-  <div class="right-container">
-
-    <div class="gallery">
-      <img class="galleryimage" src="images/sugar-rush-poster.png" alt="Vintage Poster" loading="lazy" />
-      <img class="galleryimage" src="images/women-typo.jpg" alt="Women tyography book" loading="lazy" />
-      <img class="galleryimage" src="images/women-typo-mockup-1.jpg" alt="Women typography website mockup"
-        loading="lazy" />
-    </div>
-
-    <div class="right-container-text">
-      <h3 class="subheader">PRETTY IN PINK</h3>
-      <p class="container-paragraph">For some reason during this time I was heavy-handed on using pink in my designs -
-        there was no problem and still isn't for liking pink- I think it has to do with avoiding the color for a good
-        portion of my life. <br><br> However this is beside the point, during this semester I took Typography 2 and
-        Illustration. I was first introduced to figma and application design when I created a convention-like event for
-        Women Designers and Typographers. It was very helpful to consider scale and accessibility; in previous classes
-        this topic was not explored as heavily. With illustration it was cool to explore of what Illustrator was capable
-        of with creating an enviornment based solely on shapes.</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- Fall '25 -->
-<section class="fall-25" id="fall-25">
-  <div class="time-indicator-left">FALL ‘25</div>
-  <div class="left-container">
-
-    <div class="left-container-text">
-      <h3 class="subheader">NAILING DOWN MY INTERESTS</h3>
-      <p class="container-paragraph">Suspendisse ac vehicula sapien. Curabitur congue felis at erat congue, nec
-        pulvinar
-        mi pulvinar. Cras nisl dui, interdum sit amet viverra vitae, tempus sit amet urna. Donec ipsum odio,
-        scelerisque
-        id vehicula ut</p>
-    </div>
-
-
-
-    <div class="gallery">
-      <img class=galleryimage src="images/art341_front.png" alt="Visual Resume Front" loading="lazy" />
-      <img class=galleryimage src="images/art341_back.png" alt="Visual Resume Back" loading="lazy" />
-      <img class=galleryimage src="images/photo1-fall2025.png" alt="Librarian Portrait" loading="lazy" />
-      <img class=galleryimage src="images/photo2-fall2025.png" alt="Library Photo" loading="lazy" />
+      <div class="about-me-container">
+        <h3 class="about-subheader">WHO DO I THINK I AM?</h3>
+        <p class="paragraph about-paragraph">Isabella Hodges is a senior graphic design student at San Diego State
+          University.
+          She is involved at many organizations on and off campus but she prides herself her school’s student-run
+          newspaper
+          “The Daily Aztec” as a Graphics Editor, managing print, designs published on the website, and a team of
+          designers.<br><br> Besides design, Isabella loves reading, hanging out at the library with friends, hiking,
+          binging of cult classic movies and watching the waves at the beach. <br><br>
+          In the future, Isabella hopes to work for NGOs, media publication companies or producing branding media and
+          content for businesses that serve a good cause for the local or global community. If you want to learn about
+          her,
+          click the button below to read her FAQ's. Additionally, take a look at a timeline of her school work
+          below!</p>
+        <div class="button-wrapper"><a class="about-button" href="about.html">ABOUT ME</a></div>
+      </div>
     </div>
   </div>
-</section>
 
-<!-- Spring '26' -->
-<section class="spring-26" id="spring-26">
-  <div class="time-indicator-right">SPRING ‘26</div>
-  <div class="right-container">
 
-    <div class="text-gallery-container-right">
+  <div class="container">
+    <h2 class="section-title">MY DESIGN TIMELINE</h2>
+  </div>
+
+
+  <div class="turtle-spot-graphic-wrapper"><img class="turtle-spot-graphic" src="images/turtle-graphic-01.png"
+      alt="Turtle-spot_graphic" loading="lazy" /></div>
+
+  <div class="pencil-spot-graphic-wrapper"><img class="pencil-spot-graphic" src="images/pencil-graphic-05.png"
+      alt="pencil-graphic-05" loading="lazy" /></div>
+
+
+  <!-- Spring '23' -->
+  <section class="spring-23" id="spring-23">
+    <div class="time-indicator-left">SPRING ‘23</div>
+    <div class="left-container">
+
+      <div class="left-container-text">
+        <h3 class="subheader">FROM SCRATCH</h3>
+        <p class="container-paragraph">I began attending San Diego State University in 2022 but did not start attending
+          design classes until after the first semester. The only experience I had with graphic design was with a couple
+          of years of experience in highschool. I liked it so much I decided to continue working on my
+          skills.<br><br>Typography 1 and Graphic Design 1 were my first ever university level classes. It felt super
+          official to have professors push you to think outside of the box and to keep on hatching ideas. It was kind of
+          intimidating to be surrounded in such a talented and fast-paced enviornment at first. I eventually found my
+          footing by practicing text layouts and projects catered to composition and branding.
+      </div>
+
+
+      <div class="gallery">
+        <img class="galleryimage" src="images/skolos_wedell_bookletcopy.png" alt="Skolos and Wedell" loading="lazy" />
+        <img class="galleryimage" src="images/eji-mockup.png" alt="EJI Mock-up" loading="lazy" />
+        <img class="galleryimage" src="images/jenson-type1.png" alt="Jenson Poster Triptych" loading="lazy" />
+        <img class="galleryimage" src="images/skolos_wedell_booklet3copy.png" alt="skolo and wedell pt 2"
+          loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Spring '24' -->
+  <section class="spring-24" id="spring-24">
+    <div class="time-indicator-left">SPRING ‘24</div>
+    <div class="left-container">
+
+      <div class="gallery">
+        <img class="galleryimage" src="images/flag-football.jpg" alt="Youth Women Flag Football" loading="lazy" />
+        <img class="galleryimage" src="images/pomona-sdsu-lacrosse-7 copy.JPG" alt="SDSU Lacrosse" loading="lazy" />
+        <img class="galleryimage" src="images/thelook-americankids.png" alt="American Kids Spread" loading="lazy" />
+        <img class="galleryimage" src="images/women-basketball-march-22-3copy.JPG" loading="lazy" />
+      </div>
+
+      <div class="left-container-text">
+        <h3 class="subheader">MEDIA EXPERIMENTS</h3>
+        <p class="container-paragraph">At this time I was not taking design classes but I still involved myself in
+          activities that pushed for creative problem-solving. I just joined The Look fashion club on campus. I created
+          a
+          magazine spread for American Club Kids; a fashion style that was used as a political statement by the queer
+          youth in the 80s. It was one of my first time collaborating with a team of writers, photographers and models
+          to
+          create a piece all would like. <br><br>
+          I also began to pick up photography. The quick moments that usually flash by were hard but rewarding to
+          capture.
+          I would eventually take a class that would teach me the foundational camera skills but I did well considering
+          I
+          just began creating.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+  <!-- Fall '24' -->
+  <section class="fall-24" id="fall-24">
+    <div class="time-indicator-left">FALL ‘24</div>
+    <div class="left-container">
+
+
+      <div class="left-container-text">
+        <h3 class="subheader">EXPANDED HORIZONS</h3>
+        <p class="container-paragraph">I knew there was more to do with design besides doing the assigned work in class.
+          I
+          began involving myself in clubs and internships outside the scholarly hemisphere. I spent the time outside of
+          class at publications on campus like the Daily Aztec Newspaper and The Look Fashion Magazine. I also became a
+          Design Intern for the Coronado Historical Association where I co-designed an exhibit and attendance cards for
+          walking tours.
+          <br><br> I think my involvement in these clubs and organizations really sparked my interest for news coverage
+          and community betterment; where I hope to work one day. Giving back to the community and seeing it's helpful
+          impact is what motivates me to design. Though I am scared to leave these aspects of my life behind when I
+          graduate, I know that will make a impact.
+        </p>
+      </div>
+
+
+      <div class="gallery">
+        <img class="galleryimage" src="images/the-look-spread-dice.png" alt="The Look Spread" loading="lazy" />
+        <img class="galleryimage" src="images/prop36graphic.png" alt="Prop 36 Graphic" loading="lazy" />
+        <img class="galleryimage" src="images/cha-ticket.png" alt="cha ticket" loading="lazy" />
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Spring '25' -->
+  <section class="spring-25" id="spring-25">
+    <div class="time-indicator-left">SPRING ‘25</div>
+    <div class="right-container">
+
+      <div class="gallery">
+        <img class="galleryimage" src="images/sugar-rush-poster.png" alt="Vintage Poster" loading="lazy" />
+        <img class="galleryimage" src="images/women-typo.jpg" alt="Women tyography book" loading="lazy" />
+        <img class="galleryimage" src="images/women-typo-mockup-1.jpg" alt="Women typography website mockup"
+          loading="lazy" />
+        <img class="galleryimage" src="images/542-final-posters-isabella-hodges.png" alt="type poster" loading="lazy" />
+      </div>
+
+      <div class="right-container-text">
+        <h3 class="subheader">PRETTY IN PINK</h3>
+        <p class="container-paragraph">During this time I was on a roll of using on pink with my designs -
+          there was no problem and still isn't for liking pink- I think it has to do with avoiding the color for a good
+          portion of my life. <br><br> However this is beside the point, during this semester I took Typography 2 and
+          Illustration. I was first introduced to figma and application design when I created a convention-like event
+          for
+          Women Designers and Typographers. It was very helpful to consider scale and accessibility; in previous classes
+          this topic was not explored as heavily. With illustration it was cool to explore of what Illustrator was
+          capable
+          of with creating an enviornment based solely on shapes.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Fall '25 -->
+  <section class="fall-25" id="fall-25">
+    <div class="time-indicator-left">FALL ‘25</div>
+    <div class="left-container">
+
+      <div class="left-container-text">
+        <h3 class="subheader">NAILING DOWN MY INTERESTS</h3>
+        <p class="container-paragraph">Although alot was going on with life. I still found time to refelct on what made
+          me happy and to incorporate these good memories to my school work.
+          For example, my visual resume piece feels very nostalgic to me because the beach was a place I always visited
+          with my parents every weekend when we used to live in Imperial Beach. Pictures of seagulls, ocean waves and
+          coastal plants are placed around this visual-resume pamphelet.<br><br>
+          I also created a portrait series of librarians and library staff in San Diego because I currently work as a
+          Digital Collections Student Assistant at the SDSU library and I used to regularly volunteer my highschool
+          library with shelving and book care. </p>
+      </div>
+
+
+
+      <div class="gallery">
+        <img class=galleryimage src="images/art341_front.png" alt="Visual Resume Front" loading="lazy" />
+        <img class=galleryimage src="images/art341_back.png" alt="Visual Resume Back" loading="lazy" />
+        <img class=galleryimage src="images/photo1-fall2025.png" alt="Librarian Portrait" loading="lazy" />
+        <img class=galleryimage src="images/photo2-fall2025.png" alt="Library Photo" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Spring '26' -->
+  <section class="spring-26" id="spring-26">
+    <div class="time-indicator-left">SPRING ‘26</div>
+    <div class="right-container">
 
       <div class="gallery">
         <img class="galleryimage" src="images/hodges_i_motivation-typography_poster1_reduced.png"
@@ -231,7 +270,7 @@
           alt="Second typography poster" loading="lazy" />
         <img class="galleryimage" src="images/hodges_i_motivation-typography_poster3_reduced.png"
           alt="Third typography poster" loading="lazy" />
-        <img class="galleryimage" src="images/hodges_i_motivation-typography_poster3_reduced.png"
+        <img class="galleryimage" src="images/psfa-shirt-competition_isabella-hodges.png"
           alt="Logo iterations of a quilt brand" loading="lazy" />
       </div>
       <div class="right-container-text">
@@ -247,39 +286,58 @@
       </div>
 
     </div>
-  </div>
-</section>
+    </div>
+  </section>
 
-<!-- THANK YOU NOTE -->
-<div class="thank-you">
-  <h3 class="thank-subheader">THAT'S ALL!</h3>
-  <p class="paragraph">Thank you taking a look at my website!</p>
+  <div class="bottom-soda-spot-graphic-wrapper">
+    <img class="bottom-soda-spot-graphic" src="images/soda-graphic-02.png" alt="soda spot graphic" loading="lazy" />
 </div>
 
-<!-- FOOTER SECTION -->
-<footer>
-    <div style="width: 20%; height: 100%; background: #A4CCC4"></div>
+  <!-- THANK YOU NOTE -->
+  <div class="thank-you">
+    <h3 class="thank-subheader">THAT'S ALL!</h3>
+    <p class="paragraph">Thank you taking a look at my website!</p>
+  </div>
+
+  <!-- FOOTER SECTION -->
+  <footer>
 
     <div class="text-footer-container">
-        <nav class="nav-list bottom-nav">
-            <ul>
-                <li><a href="#spring-23">Spring 23</a></li>
-                <li><a href="#spring-24">Spring 24</a></li>
-                <li><a href="#fall-24">Fall 24</a></li>
-                <li><a href="#spring-25">Spring 25</a></li>
-                <li><a href="#fall-25">Fall 25</a></li>
-                <li><a href="#spring-26">Spring 26</a></li>
-            </ul>
-        </nav>
+      <nav class="nav-list bottom-nav">
+        <ul>
+          <li><a href="#spring-23">Spring 23</a></li>
+          <li><a href="#spring-24">Spring 24</a></li>
+          <li><a href="#fall-24">Fall 24</a></li>
+          <li><a href="#spring-25">Spring 25</a></li>
+          <li><a href="#fall-25">Fall 25</a></li>
+          <li><a href="#spring-26">Spring 26</a></li>
+        </ul>
+      </nav>
 
-        <div class="footer-copyright-cta">
-            <p class="footer-copyright">Isabella Hodges. Copywrite © 2026, All Rights Reserved</p>
-            <p class="footer-cta"><a href="#">Back to top</a></p>
-        </div>
+      <div class="footer-copyright-cta">
+<p class="footer-copyright">Isabella Hodges. Copywrite © 2026, <span class="copyright-break"><br>All Rights Reserved</span></p>
+        <p class="footer-cta"><a href="#">Back to top</a></p>
+      </div>
+
     </div>
-</footer>
+
+
+    <a href="index.html">
+      <img class="nav-logo footer-logo" src="images/DFTI-Website-logo.png" alt="logo" />
+    </a>
+
+  </footer>
+
+
 
 <script src="js/script.js"></script>
+<script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('open');
+    }
+</script>
+  
 </body>
 
 </html>
