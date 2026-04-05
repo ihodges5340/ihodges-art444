@@ -138,13 +138,13 @@ div.text-wrapper {
    ============================================ */
 .top-nav {
     position: absolute;
+    padding: 15px 20px !important;
     top: 0;
     left: 0;
     z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0px;
     margin-left: 135px;
     box-sizing: border-box;
     color: #333;
@@ -168,7 +168,7 @@ div.text-wrapper {
 
 .nav-list {
     list-style-type: none;
-    margin: 0;
+margin-left: 150px;
     padding: 0;
 }
 
