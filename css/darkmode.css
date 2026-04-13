@@ -4,6 +4,7 @@
     font-weight: 0px;
 }
 
+
 .light-mode-button {
     transition: transform 0.3s ease; /* add this */
 }
@@ -11,7 +12,6 @@
 .light-mode-button.toggled {
     transform: translateY(22px); /* slides down inside the track */
 }
-
 
 
 /* ============================================
@@ -24,7 +24,7 @@ body {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    background: linear-gradient(180deg, #FFFAF5 6.73%, #a4ccc4 53.37%, #FFFAF5 100%);
+    background: #333;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -36,6 +36,7 @@ html {
 
 p {
     font-family: 'paragraph';
+        color: #FFFAF5;
 }
 
 h1 {
@@ -57,7 +58,6 @@ section {
     margin-top: 0%;
     margin-bottom: 0%;
 }
-
 
 div.text-wrapper {
     font-family: Georgia, 'Times New Roman', Times, serif !important;
@@ -95,7 +95,7 @@ div.text-wrapper {
 .subheader {
     margin-top: 0;
     margin-bottom: 25px;
-    color: #FFFAF5;
+    color: #333;
     font-family: "Darker Grotesque";
     font-size: 40px;
     font-style: normal;
@@ -105,7 +105,7 @@ div.text-wrapper {
 }
 
 .section-title {
-    color: #333;
+    color: #FFFAF5;
     font-family: "Darker Grotesque";
     font-size: 96px;
     font-style: normal;
@@ -119,17 +119,18 @@ div.text-wrapper {
 }
 
 .container-paragraph {
-    color: #FFFAF5;
+
     font-family: "Darker Grotesque";
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 28px;
     padding-top: 0%;
+    color:#333;
 }
 
 .thank-subheader {
-    color: #333;
+    color: #FFFAF5;
     text-align: center;
     font-family: "Darker Grotesque";
     font-size: 30px;
@@ -172,21 +173,6 @@ div.text-wrapper {
     font-size: 20px;
     font-family: "Darker Grotesque";
 }
-
-.bottom-nav .nav-list li a {
-    padding: 14px 8px; 
-}
-
-.bottom-nav ul li a {
-    padding: 14px 8px; 
-}
-
-.bottom-nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.08);
-    border-radius: 8px;
-}
-
-
 
 .nav-list {
     list-style-type: none;
@@ -251,16 +237,16 @@ margin-left: 150px;
     justify-content: center;
     align-items: flex-start;
     border-radius: 32px;
-    border: 3px solid #333;
-    background: #333;
+    border: 3px solid #FFFAF5;
+    background: #FFFAF5;
     align-self: center;
 }
 
 .light-mode-button {
     width: 20px;
     height: 20px;
-    background: #333;
-    border: 2px solid #FFFAF5;
+    background: #FFFAF5;
+    border: 2px solid #333;
     border-radius: 50%;
     flex-shrink: 0;
 }
@@ -274,7 +260,7 @@ margin-left: 150px;
     width: 100%;
     height: 550px;
     padding-top: 0px;
-    background: #97AA6A;
+        background: #A4CCC4;
 }
 
 .heroimage img {
@@ -290,11 +276,11 @@ margin-left: 150px;
 .about-background {
     margin: 50px auto;
     max-width: 1200px;
-    background: #FFFAF5;
+    background: #333;
     backdrop-filter: blur(2px) saturate(180%);
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    border: 1px solid #202020;
     box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2),
-        inset 0 4px 20px rgba(255, 255, 255, 0.3);
+        inset 0 4px 20px #424242;
     width: calc(100% - 200px);
 }
 
@@ -344,7 +330,7 @@ margin-left: 150px;
     height: 50%;
     background: linear-gradient(to bottom,
             rgba(255, 255, 255, 0) 0%,
-            #f3f2f0 100%);
+            #434343 100%);
     pointer-events: none;
 }
 
@@ -363,7 +349,7 @@ margin-left: 150px;
 }
 
 .about-subheader {
-    color: #333;
+    color: #FFFAF5;
     font-family: "Darker Grotesque";
     font-size: 48px;
     font-style: normal;
@@ -379,7 +365,7 @@ margin-left: 150px;
 }
 
 .about-button {
-    color: rgb(0, 0, 0);
+    color: #FFFAF5;
     font-weight: bold;
     font-family: "Darker Grotesque";
     font-size: 20px;
@@ -389,7 +375,7 @@ margin-left: 150px;
     box-shadow: 0px 4px 6.8px rgba(0, 0, 0, 0.54);
     overflow: hidden;
     border-radius: 100px;
-    outline: 2px black solid;
+    outline: 2px solid #FFFAF5;
     outline-offset: -2px;
     display: inline-flex;
     flex-direction: column;
@@ -418,7 +404,7 @@ margin-left: 150px;
     flex-direction: row;
     align-items: flex-start;
     gap: 50px;
-    background: #333;
+    background: #FFFAF5;
     box-shadow: 0 20px 36.8px -15px rgba(0, 0, 0, 0.25);
 }
 
@@ -434,7 +420,7 @@ margin-left: 150px;
     flex-direction: row;
     align-items: flex-start;
     gap: 50px;
-    background: #333;
+    background: #FFFAF5;
     box-shadow: 0 20px 36.8px -15px rgba(0, 0, 0, 0.25);
 }
 
@@ -515,7 +501,7 @@ section .gallery {
    TIME INDICATORS
    ============================================ */
 .time-indicator-left {
-    color: #FFFAF5;
+    color: #333;
     position: relative;
     top: 30px;
     left: 60px;
@@ -533,12 +519,12 @@ section .gallery {
     gap: 10px;
     border-radius: 100px;
     border: 3px solid #FFFAF5;
-    background: #97AA6A;
+    background: #A4CCC4;
     box-shadow: 0 4px 6.8px 0 rgba(0, 0, 0, 0.54);
 }
 
 .time-indicator-right {
-    color: #FFFAF5;
+    color: #333;
     position: relative;
     top: 30px;
     left: 75%;
@@ -556,7 +542,7 @@ section .gallery {
     gap: 10px;
     border-radius: 100px;
     border: 3px solid #FFFAF5;
-    background: #97AA6A;
+    background: #A4CCC4;
     box-shadow: 0 4px 6.8px 0 rgba(0, 0, 0, 0.54);
 }
 
@@ -753,7 +739,7 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 3px;
-    background-color: #333;
+    background-color: #FFFAF5;
     margin-left: 0 !important;
     margin-right: 0 !important;
     padding-bottom: 40px;
@@ -793,11 +779,12 @@ footer {
     gap: 30px;
     padding: 0px;
     text-decoration: none;
-    color: #FFFAF5;
+    color: #333;
 }
 
 .footer-copyright-cta p {
     margin: 0;
+        color: #333;
 }
 
 .footer-copyright {
@@ -816,9 +803,9 @@ footer {
 
 .footer-cta a {
     text-decoration: none;
-    color: #FFFAF5;
+    color: #333;
     border-radius: 300px;
-    outline: 2px rgb(230, 226, 226) solid;
+    outline: 2px #333 solid;
     outline-offset: 4px;
     padding: 8px 16px;
     cursor: pointer;
@@ -837,6 +824,16 @@ footer {
     font-size: 20px;
     color: #FFFAF5;
 }
+
+.bottom-nav .nav-list li a {
+    padding: 14px 8px; 
+}
+
+.bottom-nav .nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.08); 
+    border-radius: 8px;
+}
+
 
 .bottom-nav a {
     color: #FFFAF5;
@@ -863,6 +860,16 @@ footer {
     padding: 0;
     gap: 0;
     justify-content: flex-end;
+}
+
+.bottom-nav ul li a {
+    padding: 14px 8px; 
+        color: #333;
+}
+
+.bottom-nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
 }
 
 
@@ -924,6 +931,10 @@ footer {
 }
 
 
-
+@media (max-width: 860px) {
+   .nav-popup {
+        background-color: #A4CCC4 !important;
+    }
+}
 /* DARK MODE*/
 
