@@ -6,11 +6,11 @@
 
 
 .light-mode-button {
-    transition: transform 0.3s ease; /* add this */
+    transition: transform 0.3s ease; 
 }
 
 .light-mode-button.toggled {
-    transform: translateY(22px); /* slides down inside the track */
+    transform: translateY(22px); 
 }
 
 
@@ -28,6 +28,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 
 
 html {
@@ -162,8 +163,8 @@ div.text-wrapper {
     white-space: nowrap;
 }
 
-.top-nav a {
-    color: #333;
+.close-btn {
+    color:#FFFAF5 !important; 
 }
 
 .top-nav a,
@@ -206,7 +207,6 @@ margin-left: 150px;
     width: auto;
     object-fit: contain;
     flex-shrink: 0;
-    margin-right: 30px;
 }
 
 .nav-links li a:hover {
@@ -740,8 +740,7 @@ footer {
     align-items: center;
     gap: 3px;
     background-color: #FFFAF5;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+padding-right: 50px;
     padding-bottom: 40px;
     box-sizing: border-box;
 }
@@ -753,7 +752,6 @@ footer {
 
 .footer-logo {
     align-self: flex-start;
-    margin-right: 85px;
     width: 150px !important;
     height: auto !important;
 }
@@ -872,6 +870,14 @@ footer {
     border-radius: 8px;
 }
 
+ .top-nav a{
+    color: #333;
+ }
+
+.nav-links.open{
+     background: rgba(51, 51, 51, 0.8) !important;
+}
+
 
 /* ============================================
    FAQ SECTION
@@ -887,7 +893,7 @@ footer {
     flex-direction: row;
     align-items: flex-start;
     gap: 50px;
-    background: #333;
+    background: #FFFAF5;
     box-shadow: 0 20px 36.8px -15px rgba(0, 0, 0, 0.25);
     text-align: center;
     cursor: pointer;
@@ -904,7 +910,8 @@ footer {
 
 .answer {
     display: none;
-    color: #FFFAF5;
+    color: #333;
+    font-weight: 600;
     font-family: "Darker Grotesque";
     font-size: 18px;
     max-width: 850px;
@@ -916,25 +923,22 @@ footer {
     width: 12px;
     height: 12px;
     transform: rotate(45deg);
-    border-right: 5px solid #FFFAF5;
-    border-bottom: 5px solid #FFFAF5;
+    border-right: 5px solid #333;
+    border-bottom: 5px solid #333;
     transition: transform 0s ease;
-    margin-left: 10px;
+        display: inline-block !important;
+        vertical-align: middle !important;
 }
 
-.faq-box.open .faq-arrow {
-    transform: rotate(-135deg);
-}
 
 .faq-box.open .answer {
     display: block;
 }
 
 
+
 @media (max-width: 860px) {
-   .nav-popup {
-        background-color: #A4CCC4 !important;
+    .top-nav a {
+        color: #FFFAF5;
     }
 }
-/* DARK MODE*/
-

@@ -6,7 +6,7 @@
   <meta name="author" content="Art 444 Student About Page">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title class="title">About Me</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css" id="lightMode">
   <link rel="stylesheet" href="CSS/responsive.css">
 </head>
 
@@ -22,12 +22,15 @@
 
 
         <div class="light-mode-background">
-          <div class="light-mode-button"></div>
+        <div class="light-mode-button" onclick="toggleTheme()" style="cursor: pointer;" src="js/script.js"></div>
+    </div>
+    
+    
+</div>
         </div>
-      </div>
     </nav>
 
-    <div class="heroimage" style="background-color: #97AA6A;">
+    <div class="heroimage">
       <h1 class="title">About Me</h1>
     </div>
 
@@ -115,13 +118,7 @@
   </footer>
 
   <script src="js/script.js"></script>
-
-  <script>
-    function toggleFaq(box) {
-      box.classList.toggle('open');
-    }
     
-  </script>
 
 </body>
 

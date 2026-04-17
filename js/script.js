@@ -3,13 +3,16 @@ function toggleMenu() {
     navLinks.classList.toggle('open');
 }
 
-function toggleTheme() {
+function toggleFaq(element) {
+    element.classList.toggle('open');
+}
+
+function applyTheme(isDark) {
     const theme = document.getElementById("lightMode");
-    const current = theme.getAttribute("href");
     const button = document.querySelector(".light-mode-button");
     const logos = document.querySelectorAll(".nav-logo");
 
-    if (current === "css/styles.css") {
+    if (isDark) {
         theme.setAttribute("href", "css/darkmode.css");
         button.classList.add("toggled");
         logos.forEach(logo => logo.setAttribute("src", "images/DFTI-Website-logo-dark.png"));
@@ -21,3 +24,17 @@ function toggleTheme() {
         document.body.classList.remove("dark-mode");
     }
 }
+
+function toggleTheme() {
+    const current = document.getElementById("lightMode").getAttribute("href");
+    applyTheme(current === "css/styles.css");
+}
+
+function updateTheme() {
+    const hour = new Date().getHours();
+    applyTheme(hour >= 18 || hour < 6);
+}
+
+// Run on page load
+updateTheme();
+
