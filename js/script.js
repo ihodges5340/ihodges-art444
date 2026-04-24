@@ -9,25 +9,25 @@ function toggleFaq(element) {
 
 function applyTheme(isDark) {
     const theme = document.getElementById("lightMode");
+    const background = document.querySelector(".light-mode-background");
     const button = document.querySelector(".light-mode-button");
-    const logos = document.querySelectorAll(".nav-logo");
 
     if (isDark) {
         theme.setAttribute("href", "css/darkmode.css");
+        background.classList.add("toggled");
         button.classList.add("toggled");
-        logos.forEach(logo => logo.setAttribute("src", "images/DFTI-Website-logo-dark.png"));
         document.body.classList.add("dark-mode");
     } else {
         theme.setAttribute("href", "css/styles.css");
+        background.classList.remove("toggled");
         button.classList.remove("toggled");
-        logos.forEach(logo => logo.setAttribute("src", "images/DFTI-Website-logo.png"));
         document.body.classList.remove("dark-mode");
     }
 }
 
 function toggleTheme() {
-    const current = document.getElementById("lightMode").getAttribute("href");
-    applyTheme(current === "css/styles.css");
+    const isDark = document.body.classList.contains('dark-mode');
+    applyTheme(!isDark);
 }
 
 function updateTheme() {
@@ -35,6 +35,13 @@ function updateTheme() {
     applyTheme(hour >= 18 || hour < 6);
 }
 
-// Run on page load
 updateTheme();
 
+
+//faq//
+const items = document.querySelectorAll(".faq-box");
+items.forEach(item => item.addEventListener('click', function () {
+    const isOpen = this.classList.contains('open');
+    items.forEach(i => i.classList.remove('open'));
+    if (!isOpen) this.classList.add('open');
+}));

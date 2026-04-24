@@ -5,11 +5,11 @@
 }
 
 .light-mode-button {
-    transition: transform 0.3s ease; /* add this */
+    transition: transform 0.3s ease; 
 }
 
 .light-mode-button.toggled {
-    transform: translateY(22px); /* slides down inside the track */
+    transform: translateY(22px); 
 }
 
 
@@ -253,6 +253,7 @@ margin-left: 150px;
     border: 3px solid #333;
     background: #333;
     align-self: center;
+       cursor: pointer;
 }
 
 .light-mode-button {
@@ -262,6 +263,7 @@ margin-left: 150px;
     border: 2px solid #FFFAF5;
     border-radius: 50%;
     flex-shrink: 0;
+       cursor: pointer;
 }
 
 

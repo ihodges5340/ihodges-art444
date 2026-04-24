@@ -84,7 +84,7 @@ div.text-wrapper {
     top: 50%;
     left: 50%;
     transform: translate(-45%, -50%);
-    color: #333;
+    color: #FFFAF5;
     font-family: "Darker Grotesque";
     font-size: 150px;
     font-style: normal;
@@ -96,7 +96,7 @@ div.text-wrapper {
 .subheader {
     margin-top: 0;
     margin-bottom: 25px;
-    color: #333;
+    color: #FFFAF5;
     font-family: "Darker Grotesque";
     font-size: 40px;
     font-style: normal;
@@ -156,7 +156,7 @@ div.text-wrapper {
     align-items: center;
     margin-left: 135px;
     box-sizing: border-box;
-    color: #333;
+    color: #FFFAF5;
     font-family: "Darker Grotesque";
     font-style: normal;
     flex-wrap: nowrap;
@@ -191,6 +191,7 @@ margin-left: 150px;
     display: block;
     font-size: 18px;
     text-decoration: none;
+    color: #FFFAF5;
 }
 
 .nav-links {
@@ -240,6 +241,7 @@ margin-left: 150px;
     border: 3px solid #FFFAF5;
     background: #FFFAF5;
     align-self: center;
+       cursor: pointer;
 }
 
 .light-mode-button {
@@ -249,6 +251,7 @@ margin-left: 150px;
     border: 2px solid #333;
     border-radius: 50%;
     flex-shrink: 0;
+       cursor: pointer;
 }
 
 
@@ -260,7 +263,7 @@ margin-left: 150px;
     width: 100%;
     height: 550px;
     padding-top: 0px;
-        background: #A4CCC4;
+        background: #333;
 }
 
 .heroimage img {
@@ -518,7 +521,7 @@ section .gallery {
     align-items: center;
     gap: 10px;
     border-radius: 100px;
-    border: 3px solid #FFFAF5;
+    border: 3px solid #333;
     background: #A4CCC4;
     box-shadow: 0 4px 6.8px 0 rgba(0, 0, 0, 0.54);
 }
@@ -541,7 +544,7 @@ section .gallery {
     align-items: center;
     gap: 10px;
     border-radius: 100px;
-    border: 3px solid #FFFAF5;
+    border: 3px solid #333;
     background: #A4CCC4;
     box-shadow: 0 4px 6.8px 0 rgba(0, 0, 0, 0.54);
 }
@@ -893,10 +896,12 @@ padding-right: 50px;
     flex-direction: row;
     align-items: flex-start;
     gap: 50px;
-    background: #FFFAF5;
+    background: #333;
     box-shadow: 0 20px 36.8px -15px rgba(0, 0, 0, 0.25);
     text-align: center;
     cursor: pointer;
+border: 3px solid #FFFAF5;
+border-radius: 50px;
 }
 
 .faq-box .subheader {
@@ -910,7 +915,7 @@ padding-right: 50px;
 
 .answer {
     display: none;
-    color: #333;
+    color: #FFFAF5;
     font-weight: 600;
     font-family: "Darker Grotesque";
     font-size: 18px;
