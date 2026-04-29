@@ -153,6 +153,7 @@ div.text-wrapper {
     justify-content: space-between;
     align-items: center;
     margin-left: 135px;
+    gap: 20px;
     box-sizing: border-box;
     color: #333;
     font-family: "Darker Grotesque";

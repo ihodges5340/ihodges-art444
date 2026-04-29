@@ -157,6 +157,7 @@ div.text-wrapper {
     margin-left: 135px;
     box-sizing: border-box;
     color: #FFFAF5;
+    gap: 20px;
     font-family: "Darker Grotesque";
     font-style: normal;
     flex-wrap: nowrap;
