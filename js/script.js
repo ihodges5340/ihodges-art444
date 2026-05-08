@@ -45,3 +45,47 @@ items.forEach(item => item.addEventListener('click', function () {
     items.forEach(i => i.classList.remove('open'));
     if (!isOpen) this.classList.add('open');
 }));
+
+
+const galleryImages = document.querySelectorAll('.galleryimage');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+const lightboxClose = document.getElementById('lightboxClose');
+const lightboxPrev = document.getElementById('lightboxPrev');
+const lightboxNext = document.getElementById('lightboxNext');
+
+let currentIndex = 0;
+const imgArray = Array.from(galleryImages);
+
+galleryImages.forEach((img, index) => {
+    img.addEventListener('click', () => {
+        currentIndex = index;
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightbox.classList.add('active');
+    });
+});
+
+lightboxClose.addEventListener('click', () => lightbox.classList.remove('active'));
+lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) lightbox.classList.remove('active');
+});
+
+lightboxNext.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % imgArray.length;
+    lightboxImg.src = imgArray[currentIndex].src;
+});
+
+lightboxPrev.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + imgArray.length) % imgArray.length;
+    lightboxImg.src = imgArray[currentIndex].src;
+});
+
+// Close with Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') lightbox.classList.remove('active');
+    if (e.key === 'ArrowRight') lightboxNext.click();
+    if (e.key === 'ArrowLeft') lightboxPrev.click();
+});
+
+      

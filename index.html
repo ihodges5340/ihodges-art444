@@ -250,13 +250,21 @@
 
 
 
-      <div class="gallery">
-        <img class=galleryimage src="images/art341_front.png" alt="Visual Resume Front" loading="lazy" />
-        <img class=galleryimage src="images/art341_back.png" alt="Visual Resume Back" loading="lazy" />
-        <img class=galleryimage src="images/photo1-fall2025.png" alt="Librarian Portrait" loading="lazy" />
-        <img class=galleryimage src="images/photo2-fall2025.png" alt="Library Photo" loading="lazy" />
+<div class="gallery">
+        <div class="gallery-item">
+          <img class="galleryimage" src="images/art341_front.png" alt="Visual Resume Front" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img class="galleryimage" src="images/art341_back.png" alt="Visual Resume Back" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img class="galleryimage" src="images/photo1-fall2025.png" alt="Librarian Portrait" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img class="galleryimage" src="images/photo2-fall2025.png" alt="Library Photo" loading="lazy" />
+        </div>
       </div>
-    </div>
+      
   </section>
 
   <!-- Spring '26' -->
@@ -264,16 +272,21 @@
     <div class="time-indicator-left">SPRING ‘26</div>
     <div class="right-container">
 
-      <div class="gallery">
-        <img class="galleryimage" src="images/hodges_i_motivation-typography_poster1_reduced.png"
-          alt="First typography poster" loading="lazy" />
-        <img class="galleryimage" src="images/hodges_i_motivation-typography_poster2_reduced.png"
-          alt="Second typography poster" loading="lazy" />
-        <img class="galleryimage" src="images/hodges_i_motivation-typography_poster3_reduced.png"
-          alt="Third typography poster" loading="lazy" />
-        <img class="galleryimage" src="images/psfa-shirt-competition_isabella-hodges.png"
-          alt="Logo iterations of a quilt brand" loading="lazy" />
+<div class="gallery">
+        <div class="gallery-item">
+          <img class="galleryimage" src="images/hodges_i_motivation-typography_poster1_reduced.png" alt="First typography poster" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img class="galleryimage" src="images/hodges_i_motivation-typography_poster2_reduced.png" alt="Second typography poster" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img class="galleryimage" src="images/hodges_i_motivation-typography_poster3_reduced.png" alt="Third typography poster" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img class="galleryimage" src="images/psfa-shirt-competition_isabella-hodges.png" alt="Logo iterations of a quilt brand" loading="lazy" />
+        </div>
       </div>
+      
       <div class="right-container-text">
         <h3 class="subheader">THE FINAL TOUCH</h3>
         <p class="container-paragraph">As my time at San Diego State University comes to a conclusion, I feel grateful
@@ -328,6 +341,21 @@
     </a>
 
   </footer>
+
+
+  <!--lightbox-->
+<div class="lightbox-overlay" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">
+        <i class="fa fa-times"></i>
+    </button>
+    <button class="lightbox-prev" id="lightboxPrev">
+        <i class="fa fa-chevron-left"></i>
+    </button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+    <button class="lightbox-next" id="lightboxNext">
+        <i class="fa fa-chevron-right"></i>
+    </button>
+</div>
 
 <script src="js/script.js"></script>
 
